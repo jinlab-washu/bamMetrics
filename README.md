@@ -4,7 +4,7 @@ Modified copy of Jim Knight's bamMetrics tool
 
 bamMetrics came from /home/bioinfo/software/knightlab/soft/gatkutil_Apr2019/bamMetrics.cpp at Yale
 
-Compiled using the command on compute0: ```g++ -O2 -o bamMetrics_docker bamMetrics_mgibio_docker.cpp```
+Compiled using the command on compute0: ```g++ -O2 -o bamMetrics bamMetrics.cpp```
 
 ***NOTE: The base bamMetrics.cpp has been modified on line 199 to point to the location of the samtools program in the mgibio/samtools-cwl:1.0.0 docker image.
 
