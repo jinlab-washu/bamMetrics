@@ -195,7 +195,7 @@ int main(int argc, char *argv[])
 	}
 
 	char cmd[1000];
-	sprintf(cmd, "/opt/samtools/bin/samtools view -@ %d %s", numThreads, bamfile);
+	sprintf(cmd, "$SAMTOOLS view -@ %d %s", numThreads, bamfile);
 	FILE *fp = popen(cmd, "r");
 	if (fp == NULL) {
 		fprintf(stderr, "Error:  Unable to read bamfile:  %s\n", bamfile);
