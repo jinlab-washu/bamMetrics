@@ -1,4 +1,7 @@
 # bamMetrics
+## Docker location: https://hub.docker.com/repository/docker/sam16711/bam_metrics
+**Docker image is used in exome pipeline on Washu Compute0 and Compute1. If the docker image isn't working, see below for standoalone version and buliding.**
+
 Modified copy of Jim Knight's bamMetrics tool
 
 bamMetrics came from /home/bioinfo/software/knightlab/soft/gatkutil_Apr2019/bamMetrics.cpp at Yale
