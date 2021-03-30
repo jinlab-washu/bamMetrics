@@ -1,6 +1,6 @@
 # bamMetrics
 ## Docker location: https://hub.docker.com/repository/docker/sam16711/bam_metrics
-### Docker files: [bamMetrics/docker_image_files](../docker_image_files)
+### Docker files: [bamMetrics/docker_image_files](./docker_image_files)
 > If you need to rebuild image, see files above.  
   
 **NOTE: Docker image is used in exome pipeline on Washu Compute0 and Compute1. If the docker image isn't working, see below for standoalone version and buliding.**  
