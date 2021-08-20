@@ -18,6 +18,14 @@ The Makefile specifies the path to samtools. This is defaulted to ```/opt/samtoo
 
 *If you would like to run bamMetrics_docker outside of a cwl pipeline, you will need to run it with the mgibio/samtools-cwl:1.0.0 docker image.
 
+
+## Describe of `-g` for WGS bamMetrics for Dr. Knight:
+
+> For the genome analysis of bamMetrics, the “target regions” are the full chromosome 1-22 sequences.  The counts, percentages and coverages involve the uniquely mapping reads that align to those regions (PCR duplicates and multiply mapped reads are not counted, nor are chr X, Y, MT or the decoy sequence alignments).
+>
+> The metrics tool was initially developed for exome sequencing, and the word “target” stuck around when it was upgraded to do genome evaluations.  The calculations should be correct, independent of where the sequences came from (if they are Illumina reads, they should be calculcated correctly, and with a recent version of bamMetrics and the use of the “--long” option, PacBio or Nanopore sequence metrics can also be calculated).
+
+
 ## Building
 Clone the repository and run ```make```.
 
